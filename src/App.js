@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <input className='input-box' value={item} onChange={e => setItem(e.target.value)} onKeyPress={save}/>
+      <input className='input-box' placeholder="Add new task" value={item} onChange={e => setItem(e.target.value)} onKeyPress={save}/>
       <table className='table'>
         <tbody>
           {list && list.map((i, ind) => {
